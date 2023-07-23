@@ -1,0 +1,67 @@
+.btn-clr{
+    border: 1px solid var(--clr-500);
+    background-color: var(--clr-250);
+    color: var(--clr-500);
+}
+
+.menu-options{
+    padding: 0.625em;
+    cursor: pointer;
+}
+
+.menu-option-clicked{
+    border: 1px solid var(--clr-350);
+    background-color: var(--clr-150);
+    border-radius: 8px;
+    color: var(--clr-350);
+}
+
+.menu-option-clicked img{
+    color: var(--clr-350);
+}
+
+.menu-box > div{
+    margin-top: 0.5rem;
+}
+
+.sidebar-box{
+    padding: 1.5em;
+    background-color: var(--clr-100);
+    min-height: 100dvh;
+}
+
+.mob-sidebar-prop{
+    position: absolute;
+    top: 0;
+    left: -70%;
+    min-width: 70%;
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.mob-sidebar-open{
+    left: 0;
+}
+
+.big-responsive{
+    text-align: center;
+}
+
+.big-responsive img{
+    margin-inline: auto;
+}
+
+.big-responsive p{
+    margin-top: 0.625rem;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex-column button{
+    margin-bottom: 1rem;
+}
+
+

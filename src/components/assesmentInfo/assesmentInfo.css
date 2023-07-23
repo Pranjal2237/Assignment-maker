@@ -1,0 +1,38 @@
+.bag-box{
+    background-color: var(--clr-275);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: max-content;
+}
+
+.asses-date{
+    font-size: var(--fs-100);
+    color: #8DA4BF;
+}
+
+.asses-descrip-box{
+    align-items: flex-start;
+    padding: 1rem 0;
+    border-bottom: 1px dashed #DADCE0;
+}
+
+.asses-share-box{
+    padding: 1rem 0;
+}
+
+.asses-box{
+    border: 2px solid #DADCE0;
+    padding:0 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.875rem;
+    flex-basis: 100%;
+}
+
+.share-btn{
+    background-color: var(--clr-100);
+    color: var(--clr-400);
+    outline: none;
+    border: 0;
+    border: 1px solid var(--clr-400);
+    cursor: pointer;
+}

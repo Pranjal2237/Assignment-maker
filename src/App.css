@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+:root{
+  --clr-500:#D63500;
+  --clr-400:#1C4980;
+  --clr-350:#0073E6;
+  --clr-300:#05C165;
+  --clr-275:#EBE8FD;
+  --clr-250:#FBEBEA;
+  --clr-200:#F2F8FE;
+  --clr-150:#E5F1FC;
+  --clr-100:#FFFFFF;
+  --fs-400:1.25rem;
+  --fs-300:1.125rem;
+  --fs-200:0.875rem;
+  --fs-100:0.75rem;
+  --fw-regular:500;
+  --fw-semi-bold:600;
+  --fw-bold:700;
+  --ff-accent:'Inter', sans-serif;
+  --bg-clr:var(var(--clr-200));
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  background-color: #F2F8FE;
+  color:var(--clr-400);
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-between{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button{
+  padding: 0.4em 1em;
+  border-radius: 1.5rem;
+}
+
+h1{
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi-bold);
+  font-family: var(--ff-accent);
+}
+
+h2{
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-accent);
+}
+
+h3{
+  font-size: var(--fs-200);
+  font-weight: var(--fw-semi-bold);
+  font-family: var(--ff-accent);
+}
+
+p{
+  font-size: var(--fs-100);
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-accent);
+}
+
+.inputform-box{
+  padding: 1.5rem;
+  background-color: var(--clr-100);
+  border-radius: 1rem;
+  max-width: 40%;
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+.inputform-heading{
+  padding: 1rem 0;
+  border-bottom: 1px dashed #DADCE0;
+}
+
+.form-close-btn{
+  width: 35px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border:1px solid var(--clr-500);
+    background-color: var(--clr-250);
+    cursor: pointer;
+}
+
+.form-close-btn img{
+  margin: auto;
+}
+
+.btn{
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+@media(max-width:675px){
+  :root{
+  --fs-400:1rem;
+  --fs-300:0.875rem;
+  --fs-200:0.75rem;
+  --fs-100:0.625rem;
+  --bg-clr:var(var(--clr-100));
   }
-  to {
-    transform: rotate(360deg);
+
+  .inputform-box{
+    max-width: 100%;
+    top:5%;
+    left: 0;
   }
 }

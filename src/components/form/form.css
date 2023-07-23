@@ -1,0 +1,38 @@
+.form-input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #DADCE0;
+    padding: 1rem;
+    font-size: var(--fs-200);
+    outline: none;
+    margin-top: 0.875rem;
+}
+
+.form-lebel{
+    margin-top: 0.875rem;
+}
+
+.form-skills-box{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #DADCE0;
+    flex-wrap: wrap;
+}
+
+.form-skills{
+    background-color: #DDEDFF;
+    border-radius: 1.5rem;
+    padding: 0.6em;
+}
+
+.form-btn{
+    width: 100%;
+    margin-top: 2.5rem;
+    background-color: var(--clr-350);
+    color: var(--clr-100);
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    padding: 1em 0.875em;
+    cursor: pointer;
+}
